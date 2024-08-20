@@ -5,10 +5,12 @@
     "type": "git",
     "url": "git+https://github.com/TC-42-54/tsu-number.git"
   },
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "build": "tsc",
-    "test": "vitest"
+    "test": "vitest",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "eslint \"src/**/*.ts\" --fix"
   },
   "license": "MIT",
   "author": "Thomas Chezieres",

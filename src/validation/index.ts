@@ -1,6 +1,7 @@
-import assert, { AssertionError } from "assert";
+import assert, { AssertionError } from 'assert';
 
-export const isNumber = (nbr: unknown) => !isNaN(nbr as number) && typeof +nbr === 'number';
+export const isNumber = (nbr: unknown) =>
+  !isNaN(nbr as number) && typeof +nbr === 'number';
 export const assertNumber = (
   number: unknown,
   functionName: string,
@@ -14,4 +15,3 @@ export const assertNumber = (
       actual: number,
     }),
   );
-
